@@ -1,0 +1,11 @@
+<h1>Package App</h1>
+{% for package in packages%}
+<div style="border: 1px solid black">
+  <p>Package id: {{ package.id }}</p>
+  <p>Package sender: {{ package.sender }}</p>
+  <p>Package recipient: {{ package.recipient }}</p>
+  <p>Package origin: {{ package.origin }}</p>
+  <p>Package destination: {{ package.destination }}</p>
+  <p>Package location: {{ package.location }}</p>
+</div>
+{% endfor %}

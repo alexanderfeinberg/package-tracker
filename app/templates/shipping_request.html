@@ -1,0 +1,10 @@
+<h2>Fill out shipping info</h2>
+<form method="POST" action="/new_package">
+  {{ form.csrf_token }}
+  <p>{{ form.sender.label }}: {{ form.sender }}</p>
+  <p>{{ form.recipient.label }}: {{ form.recipient }}</p>
+  <p>{{ form.origin.label }}: {{ form.origin }}</p>
+  <p>{{ form.destination.label }}: {{ form.destination }}</p>
+  <p>{{ form.express.label }}: {{ form.express }}</p>
+  <p>{{ form.submit }}</p>
+</form>
